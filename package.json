@@ -1,0 +1,23 @@
+{
+  "name": "internet-of-buckets",
+  "version": "1.0.0",
+  "description": "http wrapper for controlling /The Internet of Buckets/ art installation",
+  "main": "iob.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "internet",
+    "of",
+    "buckets",
+    "iob"
+  ],
+  "author": "Stephen Whitmore <stephen.whitmore@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.74.0"
+  }
+}
