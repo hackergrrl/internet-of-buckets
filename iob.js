@@ -9,8 +9,8 @@ function color (rgb) {
   return '?r='+rgb[0]+'&g='+rgb[1]+'&b='+rgb[2]
 }
 
-function set (x, y, rgb) {
-  request(address(x, y) + color(rgb), function () {})
+function set (x, y, rgb, cb) {
+  request(address(x, y) + color(rgb), function () { if (cb) cb() })
 }
 
 module.exports = set
