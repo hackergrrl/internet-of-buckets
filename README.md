@@ -7,6 +7,8 @@ is controlled independently by a microcontroller with its own IP address, which
 responds to HTTP requests. This module wraps the process of addressing and
 routing to each bucket.
 
+There are a small variety of demos under `examples/`.
+
 ## Usage
 
 Let's draw a gradient:
