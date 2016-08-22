@@ -24,7 +24,7 @@ function applyLight (world, x, y, radius, rgb) {
       var dx = x - i
       var dy = y - j
       var dist = Math.sqrt(dx*dx + dy*dy) + 0.001
-      var power = 1 / (dist*dist)
+      var power = radius / (dist*dist)
       power = Math.max(0, Math.min(1, power))
       // console.log(i, j, power)
       next[j][i] = [100 * power, 0, 0]
@@ -57,7 +57,10 @@ function step (world) {
   var t = new Date().getTime()
   var x = 5 + Math.sin(t/1000) * 2
   var y = 2 + Math.cos(t/285) * 1.5
-  return applyLight(world, x, y, 3, [255, 0, 0])
+  x = 5
+  y = 2
+  var r = 1 + Math.sin(t/500)
+  return applyLight(world, x, y, r, [255, 0, 0])
 }
 
 function frame () {
