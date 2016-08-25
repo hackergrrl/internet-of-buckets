@@ -36,7 +36,7 @@ This will output
 var draw = require('internet-of-buckets')
 ```
 
-### draw(x, y, rgb)
+### draw(x, y, rgb, cb=function noop(){})
 
 Sets a single bucket at `(x, y)` to the colour `rgb`.
 
@@ -44,6 +44,9 @@ The top left corner is `(0, 0)`, and the bottom right corner is `(9, 4)`.
 
 `rgb` is an array of size 3, with values between `0-255`. It represents the red,
 green, and blue components respectively.
+
+If provided, `cb` is a function that will be called once the write is complete.
+This can be be useful for e.g. synchronizing several buckets' updates.
 
 
 ## Install
