@@ -28,7 +28,7 @@ for (var i=0; i < 10; i++) {
 
 This will output
 
-<img src="buckets.jpg"/>
+<img src="gradient.jpg"/>
 
 ## API
 
