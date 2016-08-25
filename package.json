@@ -1,6 +1,6 @@
 {
   "name": "internet-of-buckets",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "http wrapper for controlling /The Internet of Buckets/ art installation",
   "main": "iob.js",
   "directories": {
